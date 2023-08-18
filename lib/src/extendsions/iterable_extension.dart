@@ -1,4 +1,7 @@
+/// An extension on [Iterable] with a subtype of [String].
 extension IterableExtension on Iterable<String> {
+  /// Returns the result of converting an [Iterable] of [String]s into a [Map] of [String] key value pairs.
+  /// If there are more or fewer than one(1) `:`, this will throw a RangeError.
   Map<String, String> toMap() {
     final result = <String, String>{};
 
