@@ -1,10 +1,11 @@
 import 'package:caged_wisdom/src/extendsions/string_extension.dart';
 import 'package:caged_wisdom/src/generators/generator.dart';
 import 'package:caged_wisdom/src/templates/model_template.dart';
+import 'package:caged_wisdom/src/types.dart';
 
 class ModelGenerator extends Generator {
   final String name;
-  final Map<String, String> params;
+  final Params params;
 
   ModelGenerator(
     this.name, {

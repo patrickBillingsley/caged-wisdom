@@ -6,7 +6,10 @@ enum Generators {
   final String name;
   final Type generator;
 
-  const Generators(this.name, this.generator);
+  const Generators(
+    this.name,
+    this.generator,
+  );
 
   @override
   String toString() => '${name}Generator';

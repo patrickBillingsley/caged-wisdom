@@ -10,5 +10,5 @@ enum TemplateType {
   @override
   String toString() => value;
 
-  String toFileName() => value.toSnakeCase();
+  String get fileName => value.toSnakeCase();
 }

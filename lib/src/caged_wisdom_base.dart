@@ -3,9 +3,12 @@ import 'dart:collection';
 import 'package:caged_wisdom/src/enums/action.dart';
 import 'package:caged_wisdom/src/extendsions/iterable_extension.dart';
 import 'package:caged_wisdom/src/generators/model_generator.dart';
+import 'package:logging/logging.dart';
 
 void main(Iterable<String> arguments) {
   final args = Queue<String>.from(arguments);
+
+  final _log = Logger('main()');
 
   try {
     final action = Action.fromString(args.removeFirst());
@@ -16,8 +19,7 @@ void main(Iterable<String> arguments) {
         ModelGenerator(name, params: args.toMap()).generate();
         break;
     }
-  } catch (error) {
-    print(error);
+  } catch (error, stackTrace) {
+    _log.warning('There was an error:', error, stackTrace);
   }
 }
-
