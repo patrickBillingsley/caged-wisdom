@@ -1,3 +1,4 @@
+/// An enum for deciding what course of action to take
 enum Action {
   generate('generate');
 
@@ -5,6 +6,9 @@ enum Action {
 
   const Action(this.value);
 
+  /// Returns an [Action] from the given string.
+  /// String can be abbreviated, e.g., 'generate' and 'g' both return [Action.generate].
+  /// If there is no match, it throws an [UnimplementedError].
   static Action fromString(String string) {
     switch (string) {
       case 'generate':
