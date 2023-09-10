@@ -1,4 +1,4 @@
-import 'package:caged_wisdom/src/extendsions/string_extension.dart';
+import 'package:caged_wisdom/src/extensions/string_extension.dart';
 import 'package:caged_wisdom/src/generators/generator.dart';
 import 'package:caged_wisdom/src/templates/model_template.dart';
 import 'package:caged_wisdom/src/types.dart';

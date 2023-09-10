@@ -1,5 +1,5 @@
 import 'package:caged_wisdom/src/enums/template_type.dart';
-import 'package:caged_wisdom/src/extendsions/string_extension.dart';
+import 'package:caged_wisdom/src/extensions/string_extension.dart';
 import 'package:caged_wisdom/src/templates/template.dart';
 
 class ModelTemplate extends Template {

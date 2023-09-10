@@ -1,7 +1,7 @@
 import 'dart:collection';
 
 import 'package:caged_wisdom/src/enums/action.dart';
-import 'package:caged_wisdom/src/extendsions/iterable_extension.dart';
+import 'package:caged_wisdom/src/extensions/iterable_extension.dart';
 import 'package:caged_wisdom/src/generators/model_generator.dart';
 import 'package:logging/logging.dart';
 

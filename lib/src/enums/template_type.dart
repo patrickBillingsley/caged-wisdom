@@ -1,4 +1,4 @@
-import 'package:caged_wisdom/src/extendsions/string_extension.dart';
+import 'package:caged_wisdom/src/extensions/string_extension.dart';
 
 /// An enum defining the available [Generator] templates.
 enum TemplateType {
